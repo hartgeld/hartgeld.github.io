@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
@@ -27,7 +27,7 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <!--<a href="{{ site.baseurl }}/">Blog</a>-->
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
@@ -45,7 +45,7 @@
         </footer>
       </div>
     </div>
-
     {% include analytics.html %}
+    {% include bootstrapJavascript.html %}
   </body>
 </html>
