@@ -4,10 +4,9 @@
 //
 // IMPORTS
 //
-
+@import "bootstrap";
 @import "reset";
 @import "variables";
-@import "bootstrap";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -21,23 +20,22 @@ html {
 body {
 	background: $white;
   font: 1em/1.4 $helvetica;
-  color: $darkGray;
+  color: $black;
 }
 
 .container {
-  // margin: 0 auto;
+  margin: 0 auto;
   // max-width: 740px;
   padding: 0px;
   width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
-  color: $darkerGray;
+  font-family: $helvetica;
+  color: $black;
   font-weight: bold;
-
-  line-height: 1.7;
-  margin: 1em 0 15px;
+  line-height: 1.4;
+  //margin: 1em 0 15px;
   padding: 0;
 
   @include mobile {
@@ -118,7 +116,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: $black;
 }
 
 // Specify the color of the selection
@@ -157,7 +155,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $black;
 
   @include mobile {
     text-align: center;
@@ -177,7 +175,7 @@ img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 2px;
   }
 }
 
@@ -193,9 +191,9 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
+  color: $black;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  font-family: $helvetica;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
@@ -203,7 +201,7 @@ img {
 
 .site-description {
   margin: -5px 0 0 0;
-  color: $gray;
+  color: $black;
   font-size: 16px;
 
   @include mobile {
@@ -214,7 +212,7 @@ img {
 nav {
   float: right;
   margin-top: 23px; // @TODO: Vertically middle align
-  font-family: $helveticaNeue;
+  font-family: $helvetica;
   font-size: 18px;
 
   @include mobile {
@@ -226,7 +224,7 @@ nav {
 
   a {
     margin-left: 20px;
-    color: $darkGray;
+    color: $blue;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
@@ -243,21 +241,21 @@ nav {
 //
 
 .posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $lightGray;
+  //padding-bottom: 2em;
+  //border-bottom: 1px solid $black;
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
-  border-bottom: none;
+  //padding-bottom: 1em;
+  //border-bottom: none;
 }
 
 .post {
   blockquote {
-    margin: 1.8em .8em;
-    border-left: 2px solid $gray;
-    padding: 0.1em 1em;
-    color: $gray;
+    //margin: 1.8em .8em;
+    border-left: 2px solid $black;
+    //padding: 0.1em 1em;
+    color: $black;
     font-size: 22px;
     font-style: italic;
   }
@@ -274,9 +272,9 @@ nav {
 
 .wrapper-footer {
   margin-top: 50px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  background-color: $lightGray;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  background-color: $white;
 }
 
 footer {
@@ -290,29 +288,49 @@ footer {
 /* OWN STYLES */
 /**************/
 
-#imgScale{
-  //height: 500px;
-  //margin: auto;
-  //background-size: cover;
-  //background-position:center;
-  background-color: $lightGray;
-  //overflow: hidden;
-  //background-image: url({{ post.image }});
-  padding-bottom: 30%;
-  position: relative;
-} 
-
-#innerImg{
-  position: absolute;
+.wrapper{
   width: 100%;
-  height: 100%;
+  position: relative;
+  background-color: $blue;
+  border: 1px solid $black;
 }
 
+.wrapper:after {
+  padding-top: 87.00%;
+  display: block;
+  content: '';
+}  
 
+.content{
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+  //background-color: #ff0000;
+  color: $white;
+  padding: $myMargin;
+  margin: $myMargin;
+  overflow: hidden;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+.container-padding {
+  padding: $myMargin;
+}
+
+// Modal Supermenu 
+.modal-open {
+    overflow: scroll;
+}
 
 
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
+
 @import "highlights";
 @import "svg-icons";
+
+
