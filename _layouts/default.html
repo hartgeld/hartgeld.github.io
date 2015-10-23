@@ -2,51 +2,54 @@
 <html lang="en">
   <head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
-
     {% include meta.html %}
-
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
   </head>
 
   <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <!-- BTN MODAL -->
-          <!--<nav></nav>-->
-          <a href="#myModal" role="button" class="site-avatar" data-toggle="modal">
-            <img src="{{ site.avatar }}" />
-          </a>
-          <!-- MODAL  -->
-          <div id="myModal" class="modal fade">
-              <div class="modal-dialog">
-                  <div class="modal-content">
-                      <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                          <div class="site-info">
-                            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                            <p class="site-description">{{ site.description }}</p>
+      <div class="wrapper-masthead">
+        <div class="container">
+          <div class="row nopadding">
+              <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 nopadding">  
+                <div class="wrapper">
+                    <div class="content nopadding" style="background-color:red"> 
+                      <!--<header class="masthead clearfix"><nav>-->
+                          <a href="#myModal" data-keyboard="true" data-toggle="modal">
+                            <img class="site-avatar" src="{{ site.avatar }}" />
+                          </a>
+                          <!-- MODAL  -->
+                          <div id="myModal" class="modal fade" tabindex='-1' style="border-radius:0px !important;">
+                              <div class="modal-dialog">
+                                  <div class="modal-content">
+                                      <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                          <div class="site-info">
+                                            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                                            <p class="site-description">{{ site.description }}</p>
+                                          </div>
+                                      </div>
+                                      <div class="modal-body">
+                                          <p>Do you want to save changes you made to document before closing?</p>
+                                      </div>
+                                      <div class="modal-footer">
+                                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                          <button type="button" class="btn btn-primary">Save changes</button>
+                                      </div>
+                                  </div>
+                              </div>
                           </div>
-                      </div>
-                      <div class="modal-body">
-                          <p>Do you want to save changes you made to document before closing?</p>
-                          <p class="text-warning"><small>If you don't save, your changes will be lost.</small></p>
-                      </div>
-                      <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                      </div>
-                  </div>
+                        <!--</nav></header>-->
+                    </div>
+                </div>
               </div>
           </div>
-        </header>
+          <div class="clearfix"></div>
+        </div> 
       </div>
-    </div>
 
     <div id="main" role="main" class="container">
       {{ content }}

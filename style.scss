@@ -150,12 +150,13 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 0;
+  background-color: orange;
 }
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $black;
+  border: 1px solid $black;
 
   @include mobile {
     text-align: center;
@@ -163,10 +164,10 @@ img {
 }
 
 .site-avatar {
-  float: left;
-  width: 70px;
-  height: 70px;
-  margin-right: 15px;
+  //float: left;
+  width: 100%;
+  height: 100%;
+  margin: 0;
 
   @include mobile {
     float: none;
@@ -210,8 +211,9 @@ img {
 }
 
 nav {
-  float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
+  //float: left;
+  //margin-top: 23px; // @TODO: Vertically middle align
+  padding: 0px;
   font-family: $helvetica;
   font-size: 18px;
 
@@ -223,14 +225,14 @@ nav {
   }
 
   a {
-    margin-left: 20px;
+    //margin-left: 20px;
     color: $blue;
-    text-align: right;
-    font-weight: 300;
-    letter-spacing: 1px;
+    //text-align: right;
+    //font-weight: 300;
+    //letter-spacing: 1px;
 
     @include mobile {
-      margin: 0 10px;
+      margin: 0 0px;
       color: $blue;
     }
   }
@@ -325,7 +327,29 @@ footer {
     overflow: scroll;
 }
 
+#myModal .modal-dialog{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $blue;
+}
+#myModal .modal-content {
+  min-height: 100% !important;
+  overflow-y:auto;
+  padding-top: $myMargin;
+  padding-bottom: $myMargin;
+  border-radius:0px !important;
+}
 
+ .modal.fade .modal-dialog {
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0); // IE9 only
+          transform: translate(0, 0);
+
+ }
+.modal-backdrop {
+  background-color: #ffffff;
+}
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
