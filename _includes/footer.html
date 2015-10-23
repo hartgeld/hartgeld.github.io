@@ -1,10 +1,37 @@
 <div class="container">
 	<footer class="footer">
 		<div class="row nopadding">
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 nopadding">  
+			<div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">  
 		    	<div class="wrapper">
-		        	<div class="content nopadding" style="background-color:red">
-		        	</div>
+		    		{% if site.footer-links.email %}
+		    		<a href="mailto:{{ site.footer-links.email }}">
+			        	<div class="content nopadding" style="background-color:red">
+			        		<i class="svg-icon email"></i>
+			        	</div>
+		        	</a>
+		        	{% endif %}
+		        </div>
+		    </div>
+		    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">  
+		    	<div class="wrapper">
+		    		{% if site.footer-links.github %}
+		    		<a href="https://github.com/{{ site.footer-links.github }}">
+			        	<div class="content nopadding" style="background-color:red">
+			        		<i class="svg-icon github"></i>
+			        	</div>
+		        	</a>
+		        	{% endif %}
+		        </div>
+		    </div>
+		    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">  
+		    	<div class="wrapper">
+		    		{% if site.footer-links.twitter %}
+		    		<a href="https://www.twitter.com/{{ site.footer-links.twitter }}">
+			        	<div class="content nopadding" style="background-color:red">
+			        		<i class="svg-icon twitter"></i>
+			        	</div>
+		        	</a>
+		        	{% endif %}
 		        </div>
 		    </div>
 		</div>
