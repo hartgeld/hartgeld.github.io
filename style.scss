@@ -60,11 +60,13 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: $black;
 }
 
 p {
   margin: 15px 0;
+  color: $black;
+
 }
 
 a {
@@ -77,12 +79,12 @@ a {
 }
 
 ul, ol {
-  margin: 15px 0;
-  padding-left: 30px;
+  margin: 0px 0;
+  padding-left: 0px;
 }
 
 ul {
-  list-style-type: disc;
+  list-style-type: none;
 }
 
 ol {
@@ -336,8 +338,8 @@ footer {
 #myModal .modal-content {
   min-height: 100% !important;
   overflow-y:auto;
-  padding-top: $myMargin;
-  padding-bottom: $myMargin;
+  padding-top: 0;
+  padding-bottom: 0;
   border-radius:0px !important;
 }
 
@@ -349,6 +351,27 @@ footer {
  }
 .modal-backdrop {
   background-color: #ffffff;
+}
+.modal-header{
+  //padding-top: 0;
+  //padding-bottom: 0;
+}
+
+button{
+  color: $black;
+  background-color: transparent;
+  //font-size: ($font-size-base * 1.5);
+  font-size: ($font-size-base * 5.0);
+
+}
+
+.imgWrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 1;
+}
+.imgDescription {
+  visibility: hidden;
+  opacity: 0;
 }
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS

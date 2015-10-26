@@ -8,29 +8,53 @@
                     <img class="site-avatar" src="{{ site.avatar }}" />
                   </a>
                   <!-- MODAL  -->
-                  <div id="myModal" class="modal fade" tabindex='-1' style="border-radius:0px !important;">
+                  <div id="myModal" class="modal fade" tabindex='-1' style="  ">
                       <div class="modal-dialog">
                           <div class="modal-content">
-                              <div class="modal-header">
-                                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                  <div class="site-info">
-                                    <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-                                    <p class="site-description">{{ site.description }}</p>
+                              <div class="modal-header nopadding">
+                                <div class="container">
+                                  <div class="row nopadding">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">
+                                      <div class="wrapper">
+                                        <div class="content nopadding">
+                                          <a href="#myModal" data-keyboard="true" data-toggle="modal">
+                                            <img class="site-avatar" src="{{ site.avatar }}" />
+                                          </a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-2 nopadding">
+                                      <div class="site-info">
+                                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                                        <p class="site-description">{{ site.description }}</p>
+                                      </div>
+                                    </div>
+                                    <div class="col-md-4 col-md-2 col-sm-3 col-xs-6 nopadding">
+                                      {% markdown %} {% include about.md %} {% endmarkdown %}
+                                    </div>
                                   </div>
+                                </div>
                               </div>
-                              <div class="modal-body">
-                                <h1>List of Posts</h1>  
-                                <ul>
-                                  {% for post in site.posts %}
-                                    <li>
-                                      <a href="{{ post.url }}">
-                                        <time>{{ post.date | date: "%-d %B %Y" }}</time>
-                                        {{ post.title }}
-                                      </a>
-                                    </li>
-                                  {% endfor %}
-                                </ul>
-
+                              <div class="modal-body nopadding">
+                                <div class="container">
+                                  <div class="row nopadding">
+                                    <div class="col-md-offset-2 col-md-3">
+                                      <h3>Projects  
+                                      <ul>
+                                        {% for post in site.posts %}
+                                          <li>
+                                            <a href="{{ post.url }}">
+                                              <!--<time>{{ post.date | date: "%-d %B %Y" }}</time>-->
+                                              {{ post.title }}
+                                            </a>
+                                          </li>
+                                        {% endfor %}
+                                      </ul>
+                                      </h3>
+                                    </div>
+                                  </div>
+                                </div>
 
                               </div>
                               <div class="modal-footer">

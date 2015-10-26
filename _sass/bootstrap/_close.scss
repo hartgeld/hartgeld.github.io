@@ -5,19 +5,18 @@
 
 .close {
   float: right;
-  font-size: ($font-size-base * 1.5);
+  //font-size: ($font-size-base);
   font-weight: $close-font-weight;
   line-height: 1;
-  color: $close-color;
-  text-shadow: $close-text-shadow;
-  @include opacity(.2);
+  //color: #000;
+  //background-color: $blue;
+  //opacity: 0.0;
 
   &:hover,
   &:focus {
-    color: $close-color;
+    //color: #000;
     text-decoration: none;
     cursor: pointer;
-    @include opacity(.5);
   }
 
   // [converter] extracted button& to button.close
@@ -30,7 +29,7 @@
 button.close {
   padding: 0;
   cursor: pointer;
-  background: transparent;
+  //background: transparent;
   border: 0;
   -webkit-appearance: none;
 }
