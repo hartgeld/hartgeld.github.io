@@ -5,8 +5,8 @@
 		    	<div class="wrapper">
 		    		{% if site.footer-links.email %}
 		    		<a href="mailto:{{ site.footer-links.email }}">
-			        	<div class="content nopadding" style="background-color:red">
-			        		<i class="svg-icon email"></i>
+			        	<div class="content nopadding">
+			        		<i class="svg-icon email vertCenter "></i>
 			        	</div>
 		        	</a>
 		        	{% endif %}
@@ -16,28 +16,53 @@
 		    	<div class="wrapper">
 		    		{% if site.footer-links.github %}
 		    		<a href="https://github.com/{{ site.footer-links.github }}">
-			        	<div class="content nopadding" style="background-color:red">
-			        		<i class="svg-icon github"></i>
+			        	<div class="content nopadding" >
+			        		<i class="svg-icon github vertCenter" style=""></i>
 			        	</div>
 		        	</a>
 		        	{% endif %}
 		        </div>
 		    </div>
-		    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-4 nopadding">  
+		    <div class="col-lg-1 col-md-1 col-sm-2 col-xs-4 nopadding">   
 		    	<div class="wrapper">
 		    		{% if site.footer-links.twitter %}
 		    		<a href="https://www.twitter.com/{{ site.footer-links.twitter }}">
-			        	<div class="content nopadding" style="background-color:red">
-			        		<i class="svg-icon twitter"></i>
+			        	<div class="content nopadding" >
+			        		<i class="svg-icon twitter vertCenter" ></i>
 			        	</div>
 		        	</a>
 		        	{% endif %}
 		        </div>
 		    </div>
-			<div class="col-md-9 col-md-9 col-sm-6 col-xs-12 nopadding">
-                    {% markdown %} {% include copyright.md %} {% endmarkdown %}
+		    
+			<div class="col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-1 col-sm-6 col-xs-12 nopadding">
+				<div class="visible-md-block col-md-3 col-sm-6 col-xs-6 nopadding"> 
+					<div class="wrapper">
+						<div class="content">
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 col-md-8" id="copyrightTxt">
+					{% markdown %} {% include copyright.md %} {% endmarkdown %}           
+				</div>
+				<div class="col-lg-3 visible-lg-block col-md-3 col-sm-6 col-xs-6 nopadding"> 
+					<div class="wrapper">
+						<div class="content">
+						</div>
+					</div>
+				</div>
             </div>
-
 		</div>
 	</footer>
 </div>
+
+
+<!--
+
+				<div class="wrapper">
+					<div class="content">
+						</div>
+				</div>
+
+
+	-->

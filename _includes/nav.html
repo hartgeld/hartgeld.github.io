@@ -1,13 +1,15 @@
 <div class="container">
   <div class="row nopadding">
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">  
+      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 nopadding">  
         <div class="wrapper">
-            <div class="content nopadding" style="background-color:red"> 
+            <div class="content nopadding"> 
               <!--<header class="masthead clearfix"><nav>-->
-                  <a href="#myModal" data-keyboard="true" data-toggle="modal">
-                    <img class="site-avatar" src="{{ site.avatar }}" />
-                  </a>
-                  <!-- MODAL  -->
+              <a href="#myModal" data-keyboard="true" data-toggle="modal">
+                <img class="site-avatar" src="{{ site.avatar }}" />
+              </a>
+              <!-- MODAL  -->
+              <nav>
+                <header>
                   <div id="myModal" class="modal fade" tabindex='-1' style="  ">
                       <div class="modal-dialog">
                           <div class="modal-content">
@@ -26,7 +28,7 @@
                                     </div>
                                     <div class="col-md-2 nopadding">
                                       <div class="site-info">
-                                        <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
+                                        <h3 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h3>
                                         <p class="site-description">{{ site.description }}</p>
                                       </div>
                                     </div>
@@ -43,7 +45,7 @@
                                       <h3>Projects  
                                       <ul>
                                         {% for post in site.posts %}
-                                          <li>
+                                          <li >
                                             <a href="{{ post.url }}">
                                               <!--<time>{{ post.date | date: "%-d %B %Y" }}</time>-->
                                               {{ post.title }}
@@ -55,27 +57,20 @@
                                     </div>
                                   </div>
                                 </div>
-
                               </div>
                               <div class="modal-footer">
-                                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                  <button type="button" class="btn btn-primary">Save changes</button>
+                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
                               </div>
                           </div>
                       </div>
                   </div>
-                <!--</nav></header>-->
+                </header>
+              </nav>
             </div>
         </div>
       </div>
   </div>
-  <div class="clearfix"></div>
-  <div class="row nopadding">
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">
-        <div class="wrapper">
-            <div class="content nopadding" style="background-color:red">
-            </div>
-          </div>
-        </div>  
-      </div>
 </div>
+
+
+

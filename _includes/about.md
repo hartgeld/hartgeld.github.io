@@ -1,7 +1,7 @@
 ---
 ---
 
-### I'm a Designer, currently living in Stuttgart, Germany. 
+### I'm a Designer, from Stuttgart, Germany. 
 ### My focus is on the intersection of code and design. 
-### I care about how something looks and feels, but also how it works. 
+### I care how things look and feel, but also how they work. 
 ### [Contact me](mailto:lorehartgeld@gmail.com)
