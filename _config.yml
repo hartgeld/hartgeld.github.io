@@ -78,4 +78,7 @@ exclude:
     - CNAME
 # Include these directories and files
 include: 
-    - ./_assets
+#    - ./_assets
+assets:
+  sources:
+    - assets/javascripts

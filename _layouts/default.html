@@ -8,20 +8,19 @@
     <![endif]-->
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
+<!-- load p5.js stage ani-->
+    <script language="javascript" type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="{{ site.baseurl }}/assets/javascripts/sketch.js"></script>
   </head>
-
   <body>
-
-      
-
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
-
     <div class="wrapper-footer">
       {% include footer.html %}
     </div>
-
     {% include analytics.html %}
     {% include bootstrapJavascript.html %}
   
