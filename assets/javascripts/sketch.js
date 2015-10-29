@@ -26,35 +26,37 @@ var sketch = function( p ) {
   }
 };
 
+/*
 var navSketch = function( p ) {
 
   p.setup = function() {
     p.createCanvas(outerWidth/6, (outerWidth/6)*0.87);
     console.log(outerWidth/6);
-
-
   };
 
   p.draw = function() {
-    p.background(10);
+    
+    //p.background(0);
     //p.ellipseMode(CORNER);
+    p.smooth();
+    p.fill(0);
     p.ellipse(p.width/2,p.height/2,100, 100);
   }
 };
-
+*/
 
 window.onload = function() {
   
   var containerNode = document.getElementById( 'myStage' );
   var myp5 = new p5(sketch, containerNode);
-
+/*
   var containerNodeNav = document.getElementById( 'myNav' );
   var myp5Nav = new p5(navSketch, containerNodeNav);
 
   var myDiv = document.getElementById('myLogoDimensions');
     var myLogoWidth = myDiv.style.width;
     console.log(myLogoWidth);
-
+*/
 };
 
 

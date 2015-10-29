@@ -1,79 +1,88 @@
 <div class="container">
   <div class="row nopadding">
-      <div class="col-lg-2 col-md-2 col-sm-3 col-xs-4 nopadding" >  
-        <div class="wrapper" >
-            <div class="content nopadding">
-              <!--<div id="myLogoDimensions"> -->
-                <!--<header class="masthead clearfix"><nav>-->
-                <a href="#myModal" data-keyboard="true" data-toggle="modal">
-                  <!--<img class="site-avatar" src="{{ site.avatar }}" />-->
-                  <div id="myNav" ></div>
-                </a>
-              <!--</div>-->
-              <!-- MODAL  -->
-              <nav>
-                <header>
-                  <div id="myModal" class="modal fade" tabindex='-1' style="  ">
-                      <div class="modal-dialog">
-                          <div class="modal-content">
-                              <div class="modal-header nopadding">
-                                <div class="container">
-                                  <div class="row nopadding">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">
-                                      <div class="wrapper">
-                                        <div class="content nopadding">
-                                          <a href="#myModal" data-keyboard="true" data-toggle="modal">
-                                            <img class="site-avatar" src="{{ site.avatar }}" />
-                                          </a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-2 nopadding">
-                                      <div class="site-info">
-                                        <h3 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h3>
-                                        <p class="site-description">{{ site.description }}</p>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-4 col-md-2 col-sm-3 col-xs-6 nopadding">
-                                      <p>Copyright here</p>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-body nopadding">
-                                <div class="container">
-                                  <div class="row nopadding">
-                                    <div class="col-md-offset-2 col-md-3">
-                                      <h3>Projects  
-                                      <ul>
-                                        {% for post in site.posts %}
-                                          <li >
-                                            <a href="{{ post.url }}">
-                                              <!--<time>{{ post.date | date: "%-d %B %Y" }}</time>-->
-                                              {{ post.title }}
-                                            </a>
-                                          </li>
-                                        {% endfor %}
-                                      </ul>
-                                      </h3>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal-footer">
-                                  <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                </header>
-              </nav>
-            </div>
-        </div>
+    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 nopadding" >
+      <div class="wrapper" >
+        <a href="{{ site.baseurl }}/" data-dismiss="modal">
+          <div class="content nopadding">
+            <h3>{{ site.name }}</h3>
+          </div>
+        </a>
       </div>
+    </div>
+    <div class="col-lg-10 col-md-2 col-sm-3 col-xs-4 nopadding"></div>
+    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 nopadding">
+      <div class="wrapper" >
+        <a href="#myModal" data-keyboard="true" data-toggle="modal">
+          <div class="content nopadding">
+            <!--<div id="myLogoDimensions"> -->
+            <!--<header class="masthead clearfix"><nav>-->
+            <!--<img class="site-avatar" src="{{ site.avatar }}" />-->
+            <!--<div id="myNav" ></div>-->
+            <h3>Info</h3>
+          </div>
+        </a>
+        <!-- MODAL  -->
+        <nav>
+          <header>
+            <div id="myModal" class="modal fade" tabindex='-1' style="  ">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header nopadding">
+                    <div class="container">
+                      <div class="row nopadding">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">
+                          <div class="wrapper">
+                            <div class="content nopadding">
+                              <a href="#myModal" data-keyboard="true" data-toggle="modal">
+                                <img class="site-avatar" src="{{ site.avatar }}" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2 nopadding">
+                          <div class="site-info">
+                            <h3 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h3>
+                            <p class="site-description">{{ site.description }}</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-md-2 col-sm-3 col-xs-6 nopadding">
+                          <p>Copyright here</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-body nopadding">
+                    <div class="container">
+                      <div class="row nopadding">
+                        <div class="col-md-offset-2 col-md-3">
+                          <h3>Projects  
+                            <ul>
+                              {% for post in site.posts %}
+                                <li >
+                                  <a href="{{ post.url }}">
+                                    <!--<time>{{ post.date | date: "%-d %B %Y" }}</time>-->
+                                    {{ post.title }}
+                                  </a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                      <!--<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        </nav>
+      </div>
+    </div>
   </div>
 </div>
-
 
 
