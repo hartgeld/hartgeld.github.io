@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ur mum 
-image:
+image: https://media.giphy.com/media/111QUDKfexXk1W/giphy.gif
 ---
 
 Your mum is big
