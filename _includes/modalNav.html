@@ -1,0 +1,185 @@
+
+<!-- 'INFO' BtnR MODAL  -->
+<nav style="margin-top:0px;"> 
+
+    <div id="myModal" class="modal " tabindex='-1'> <!--class="fade" -->
+      <div class="modal-dialog">
+        <div class="modal-content">
+
+          <!-- Header -->
+          <div class="modal-header nopadding">
+            
+            <!-- Home Button -->
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 nopadding" >
+              <div class="wrapper" id="btnLHeight">
+                <a href="{{ site.baseurl }}/" >
+                  <div class="content nopadding centerTargetTxt btnLContent" id="setLineHeightHomeModal" >
+                      <span>
+                        <h3 class="home-label">
+                          <span style="line-height:0.8em;">
+                            HART<br>GELD
+                          </span>
+                        </h3>
+                      </span><!--<h3>{{ site.name }}</h3>-->
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Offset | BtnL <-> BtnR-->
+            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 nopadding"></div>
+          
+            <!-- 'INFO' BtnR-->
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 nopadding">
+              <div class="wrapper">
+                <a href="#myModal" data-keyboard="true" data-dismiss="modal">
+                  <div class="content nopadding centerTargetTxt btnRModalContent" id="setLineHeightInfoModal">
+                    <span>
+                      <h3 class="infoModal-label">
+                        <span style="line-height:0.8em;">
+                          CLO<br>SE
+                        </span>
+                      </h3>
+                    </span>
+                  </div>
+                </a>        
+              </div>
+            </div>
+
+            <!-- vert extension stage -->
+            <div class="clearfix"></div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding" >
+              <div class="wrapper">
+                <div class="content nopadding">    
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+
+        </div>
+
+        <!-- Body Modal -->
+        <div class="modal-body nopadding">
+          <div class="container">
+            <div class="row nopadding">
+
+              <!-- Left Margin -->
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+
+              <!--Stage Modal Body -->
+              <div class="col-lg-6 col-md-6 col-sm-10 col-xs-10 nopadding">  
+              <!-- About Text -->
+                <h5>
+                  Hi.<br>
+                  My name is Holger and I'm a Designer from Stuttgart.<br>
+                  My focus is on the intersection of code and design.<br>
+                  I care how things look and feel, but also how they work.<br>
+                  <a href:"mailto:lorehartgeld@gmail.com">Contact me.</a>
+                </h5>
+              </div>
+
+              <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                <div class="wrapper nopadding">
+                  <div class="content nopadding">    
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project List -->
+              <div class="col-lg-3 col-md-3 col-sm-10 col-xs-10 nopadding">
+                <h5>Content  
+                  <ul>
+                    {% for post in site.posts %}
+                      <li >
+                        <a href="{{ post.url }}">
+                          {{ post.title }}
+                        </a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </h5>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</nav> 
+
+
+
+
+
+
+
+
+                    <!--
+                    <div class="container">
+                      <div class="row nopadding">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <div class="col-lg-2 col-md-2 col-sm-3 col-xs-6 nopadding">
+                          <div class="wrapper">
+                            <div class="content nopadding">
+                              <a href="#myModal" data-keyboard="true" data-toggle="modal">
+                                <img class="site-avatar" src="{{ site.avatar }}" />
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-2 nopadding">
+                          <div class="site-info">
+                            <h3 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h3>
+                            <p class="site-description">{{ site.description }}</p>
+                          </div>
+                        </div>
+                        <div class="col-md-4 col-md-2 col-sm-3 col-xs-6 nopadding">
+                          <p>Copyright here</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+               
+
+                  <div class="modal-body nopadding">
+                    <div class="container">
+                      <div class="row nopadding">
+                        <div class="col-md-offset-2 col-md-3">
+                          <h3>Projects  
+                            <ul>
+                              {% for post in site.posts %}
+                                <li >
+                                  <a href="{{ post.url }}">
+                                    {{ post.title }}
+                                  </a>
+                                </li>
+                              {% endfor %}
+                            </ul>
+                          </h3>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="modal-footer">
+                  </div>
+ -->
+                              
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             <!--<time>{{ post.date | date: "%-d %B %Y" }}</time>-->

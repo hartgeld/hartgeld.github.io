@@ -215,7 +215,6 @@ img {
 
 nav {
   //float: left;
-  //margin-top: 23px; // @TODO: Vertically middle align
   padding: 0px;
   font-family: $helvetica;
   font-size: 18px;
@@ -343,7 +342,7 @@ footer {
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  background-color: $blue;
+  background-color: $white;
 }
 #myModal .modal-content {
   min-height: 100% !important;
@@ -363,6 +362,7 @@ footer {
   background-color: #ffffff;
 }
 .modal-header{
+  border-bottom-width: 0px;
   //padding-top: 0;
   //padding-bottom: 0;
 }
@@ -437,6 +437,17 @@ span
 }
 
 //BtnR: Info/Info
+.btnRModalContent h3.infoModal-label span {
+}
+.btnRModalContent:hover h3.infoModal-label span {
+  display: none;
+}
+.btnRModalContent:hover h3.infoModal-label:after {
+  content: 'CLOSE';
+}
+
+
+//BtnBottom: Mail
 .btnMailContent h3.mail-label span {
 }
 .btnMailContent:hover h3.mail-label span {
@@ -445,6 +456,7 @@ span
 .btnMailContent:hover h3.mail-label:after {
   content: 'MAIL';
 }
+
 
 // Posts: vertical center type
 .VertAlignTypeWrapper {
