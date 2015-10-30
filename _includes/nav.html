@@ -1,30 +1,51 @@
+<!-- 'NAVIGATION' Header Start -->
 <div class="container">
   <div class="row nopadding">
-    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 nopadding" >
+
+    <!-- 'HOME' BtnL-->
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 nopadding" >
       <div class="wrapper" >
         <a href="{{ site.baseurl }}/" data-dismiss="modal">
-          <div class="content nopadding">
-            <h3>{{ site.name }}</h3>
+          <div class="content nopadding centerTargetTxt btnLContent">
+              <span>
+                <h3 class="home-label">
+                  <span style="line-height:0.8em;">
+                    HART<br>GELD
+                  </span>
+                </h3>
+              </span><!--<h3>{{ site.name }}</h3>-->
           </div>
         </a>
       </div>
     </div>
-    <div class="col-lg-10 col-md-2 col-sm-3 col-xs-4 nopadding"></div>
-    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-4 nopadding">
+
+    <!-- Offset | BtnL <-> BtnR -->
+    <div class="col-lg-10 col-md-10 col-sm-10 col-xs-8 nopadding"></div>
+    
+    <!-- 'INFO' BtnR-->
+    <div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 nopadding">
       <div class="wrapper" >
         <a href="#myModal" data-keyboard="true" data-toggle="modal">
-          <div class="content nopadding">
-            <!--<div id="myLogoDimensions"> -->
-            <!--<header class="masthead clearfix"><nav>-->
-            <!--<img class="site-avatar" src="{{ site.avatar }}" />-->
-            <!--<div id="myNav" ></div>-->
-            <h3>Info</h3>
+          <div class="content nopadding centerTargetTxt btnRContent">
+            <span>
+              <h3 class="info-label">
+                <span style="line-height:0.8em;">
+                  IN<br>FO
+                </span>
+              </h3>
+            </span>
+            <!-- P5 Logo Integration -->
+            <!-- <div id="myLogoDimensions"> -->
+            <!-- <header class="masthead clearfix"><nav> -->
+            <!-- <img class="site-avatar" src="{{ site.avatar }}" /> -->
+            <!-- <div id="myNav" ></div> -->
           </div>
         </a>
-        <!-- MODAL  -->
+        
+        <!-- 'INFO' BtnR MODAL  -->
         <nav>
           <header>
-            <div id="myModal" class="modal fade" tabindex='-1' style="  ">
+            <div id="myModal" class="modal fade" tabindex='-1'>
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header nopadding">
@@ -80,9 +101,11 @@
             </div>
           </header>
         </nav>
+
       </div>
     </div>
   </div>
 </div>
+<!-- 'NAVIGATION' Header End -->
 
 

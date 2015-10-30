@@ -8,7 +8,7 @@ var sketch = function( p ) {
   var easing = 0.09;
 
   p.setup = function() {
-    p.createCanvas(p.windowWidth-15, p.windowHeight);
+    p.createCanvas(p.windowWidth-15, p.windowHeight-15);
   };
 
   p.draw = function() {

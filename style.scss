@@ -400,6 +400,52 @@ button{
   width: 100%;
   height: 100%;
 }
+
+// Center Txt in Div Horz & Vert
+span
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+.centerTargetTxt{
+  vertical-align:middle;
+  line-height:100px;
+  text-align: center;
+}
+
+//change text on hover
+
+//BtnL: Hartgeld/Home
+.btnLContent h3.home-label span {
+}
+.btnLContent:hover h3.home-label span {
+  display: none;
+}
+.btnLContent:hover h3.home-label:after {
+  content: 'HOME';
+}
+
+//BtnR: Info/Info
+.btnRContent h3.info-label span {
+}
+.btnRContent:hover h3.info-label span {
+  display: none;
+}
+.btnRContent:hover h3.info-label:after {
+  content: 'INFO';
+}
+
+//BtnR: Info/Info
+.btnMailContent h3.mail-label span {
+}
+.btnMailContent:hover h3.mail-label span {
+  display: none;
+}
+.btnMailContent:hover h3.mail-label:after {
+  content: 'MAIL';
+}
+
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 

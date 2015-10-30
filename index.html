@@ -6,45 +6,54 @@ layout: default
 	
 	<div class="row nopadding">
 		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+			
 			<!-- STAGE -->
 			<div  id="myStage"></div>
+
 			<!-- NAV -->
 			<div class="wrapper-masthead">
 		        {% include nav.html %} 
 		    </div>
 		    <div class="clearfix"></div>
-<!--
-			<div class="col-lg-2 col-md-3 col-sm-6 col-xs-8 nopadding">
+
+			<!-- vert extension stage -->
+			<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding">
 				<div class="wrapper">
 				    <div class="content nopadding">    
 				    </div>
 		  		</div>
 		  	</div>
-		  -->
+		  	
 		</div>  
 	</div>
 	<div class="clearfix"></div>
-	<!-- ARTICLE WALL -->
-	<div class="row nopadding">
-		{% for post in site.posts %}
-			<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 nopadding">	
-				<div class="wrapper imgWrap">
-					<a href="{{ site.baseurl }}{{ post.url }}">
-						<div class="content" style="background-image:url({{ post.image }}); background-size:cover;">
-							<div class="imgDescription">
-							    <article class="post">
-							    	<h1>{{ post.title }}</h1>
-							    	<div class="entry">
-							      		{{ post.excerpt }} 
-							    	</div>
-							    </article>
-							</div>
-					    </div>
-					</a>
+
+	<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+	<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nopadding">
+	
+		<!-- ARTICLE WALL -->
+		<div class="row nopadding">
+			{% for post in site.posts %}
+				<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 nopadding">	
+					<div class="wrapper imgWrap">
+						<a href="{{ site.baseurl }}{{ post.url }}">
+							<div class="content"> <!--style="background-image:url({{ post.image }}); background-size:cover;"-->
+								<div class="imgDescription">
+								    <article class="post">
+								    	<h1>{{ post.title }}</h1>
+								    	<div class="entry">
+								      		{{ post.excerpt }} 
+								    	</div>
+								    </article>
+								</div>
+						    </div>
+						</a>
+					</div>
 				</div>
-			</div>
-		{% endfor %}
+			{% endfor %}
+		</div>
+		<div class="clearfix"></div>
+
 	</div>
-	<div class="clearfix"></div>
 </div>
 
