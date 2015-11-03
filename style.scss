@@ -65,7 +65,7 @@ h4 {
 }
 
 p {
-  margin: 15px 0;
+  //margin: 15px 0;
   color: $black;
 
 }
@@ -472,6 +472,12 @@ span
     vertical-align: middle;
     text-align: center;
   }
+.VertAlignTypeInnerTitlePost{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: left;
+  }
+
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 

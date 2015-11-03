@@ -3,37 +3,85 @@ layout: default
 ---
 
 	<div class="container">
-		<div class="row nopadding">
-			<!-- STAGE -->
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding" style="background-image:url({{ page.image }}); background-size:cover;">
-				<!-- NAV -->
+
+		<!-- NAV -->
+		<div class="row nopadding">			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">		
 				<div class="wrapper-masthead">
 			        {% include nav.html %} 
 			    </div>
 			    <div class="clearfix"></div>
-
-				<div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 nopadding">
+			    <!-- vert extension stage 
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding">
 					<div class="wrapper">
 					    <div class="content nopadding">    
 					    </div>
 			  		</div>
 			  	</div>
-			</div>  
+			  	<div class="clearfix"></div>-->	
+			</div>
 		</div>
+
+	  	<!-- STAGE IMG HEADER-->
+		<div class="row nopadding">
+			<!-- left-margin stage img header --> 
+		  	<div class ="col-lg-1 col-md-1 col-sm-1 col-xs-1 nopadding"></div>
+		  	<!-- body stage img header -->
+			<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 nopadding" style="background-image:url({{ page.image }}); background-size:cover;">
+				<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 nopadding"> 
+					<div class="wrapper">
+					    <div class="content nopadding">    
+					    </div>
+			  		</div>
+			  	</div>
+		  	</div>
+		  	<div class="clearfix"></div>
+		 </div>
+
+		<div class="row nopadding">
+			<!-- TITLE TXT -->
+		  	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 nopadding">
+		  		<!-- Set left margin -->
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1 nopadding">		
+			  	</div>
+			  	<!-- Title Txt Content-->
+				<div class="col-lg-1 col-md-1 col-sm-1 col-xs-2 nopadding">
+					<div class="wrapper">
+					  	<div class="content" style="overflow: visible; white-space:nowrap; padding:0; margin:0 0; line-height:0.8em;">
+						  	<div class="VertAlignTypeWrapper">
+								<div class="VertAlignTypeInnerTitlePost">
+									<h3>{{ page.title }}</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+
+		<!-- CONTENT ARTICLE BODY -->
+		<div class="row nopadding">
+			<!-- Set left margin -->
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1 nopadding"></div>
+
+			<!-- Content Txt --> 
+			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 nopadding">
+
+				<article class="post">
+					<div class="entry">
+						{{ content }}
+					</div>
+					<!--
+					<div class="date">
+					Written on {{ page.date | date: "%B %e, %Y" }}
+					</div>-->
+				</article>
+			
+			</div>
+
+		</div>
+
 	</div>
 
-
-<article class="post">
-  <h1>{{ page.title }}</h1>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>
-<!--  {% include disqus.html %}-->
-  <!--{% include bootstrapJavascript.html %}-->
-
-</article>
+	<!--  {% include disqus.html %}-->
