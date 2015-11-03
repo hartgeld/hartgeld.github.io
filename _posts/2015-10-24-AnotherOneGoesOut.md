@@ -1,7 +1,7 @@
 ---
 layout: post
-title: There goes another one
-image: http://www.bigtrends.com/wp-content/uploads/2011/04/benjamins.jpg
+title: CDLXMono
+image: images/02_cdlxMono_teaser.png
 ---
 
 Send me Hartgeld
