@@ -479,7 +479,9 @@ span
   }
 
   .titleOutline{
-    -webkit-text-stroke: 1px white;
+
+    //-webkit-text-stroke: 10px white;
+    
    color: black;
    text-shadow:
        3px 3px 0 $white,
@@ -488,6 +490,7 @@ span
       -1px 1px 0 $white,
        1px 1px 0 $white,
        ;
+       
   }
 
 
