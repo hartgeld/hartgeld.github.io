@@ -62,26 +62,20 @@ layout: default
 
 		<!-- CONTENT ARTICLE BODY -->
 		<div class="row nopadding">
-			<!-- Set left margin -->
-			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-1 nopadding"></div>
-
-			<!-- Content Txt --> 
-			<div class="col-lg-4 col-md-5 col-sm-6 col-xs-10 nopadding">
-
-				<article class="post">
-					<div class="entry">
-						{{ content }}
-					</div>
-					<!--
-					<div class="date">
-					Written on {{ page.date | date: "%B %e, %Y" }}
-					</div>-->
-				</article>
 			
-			</div>
+			<article class="post">
+				<div class="entry">
+					{{ content }}
+				</div>
+				
+				<!--
+				<div class="date">
+					Written on {{ page.date | date: "%B %e, %Y" }}
+				</div>
+				-->
+			</article>
 
 		</div>
-
 	</div>
 
 	<!--  {% include disqus.html %}-->
